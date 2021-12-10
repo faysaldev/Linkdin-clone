@@ -1,0 +1,299 @@
+.home{
+    padding-top: 100px;  
+    max-width: 1128px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.home__top{
+    min-height: 50px;
+    padding: 15px 0;
+    box-sizing: content-box;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-wrap: nowrap;
+    text-decoration: underline;
+    line-height: 19px;
+}
+
+.home__top h5{
+color: #0a66c2;
+font-size: 15px;
+}
+.home__top a{
+    font-weight: 700;
+}
+.home__top p{
+    font-weight: 600;
+    color: #434849;
+
+}
+
+
+.home__layout {
+    display: grid;
+    grid-template-areas:"leftside main rightside";
+    grid-template-columns: minmax(0,5fr) minmax(0,12fr) minmax(300px,7fr);
+    column-gap: 25px;
+    row-gap:25px;
+    grid-template-rows: auto;
+}
+ 
+   /* start design for the left side  */
+
+.home_left{
+    grid-area: leftside;
+}
+
+.art__card{
+    text-align: center;
+    overflow:hidden;
+    margin-bottom:9px;
+    background-color: white;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0px 0px 1px lightgrey;
+}
+
+.user__info{
+box-shadow: 0px 1px 1px black;
+}
+
+.home__leftBg{
+    background-position: center;
+    background-size: 462px;
+    height:70px;
+    margin: -12px -12 0;
+}
+
+.camera__icon{
+    width:75px;
+    height:75px;
+    box-sizing: border-box;
+    background:white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+    border: 2px solid lightgrey;
+    margin: -38px auto 12px;
+    border-radius: 50%;
+}
+
+
+.user__info a h3{
+    font-size: 17px;
+    line-height: 1.5;
+    color: rgba(0,0,0,0.9);
+    font-weight: 600;
+}
+
+.user__info .add__photo{
+    padding: 9px 5px 30px;
+    color: #0a66c2;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.55;
+    border-bottom: 1px solid lightgrey;
+}
+
+
+.widgets {
+    padding: 10px;
+    margin-top: 3px;
+    border-bottom: 1px solid lightgrey;
+}
+
+.widgets a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.widgets__text{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.widgets__text span {
+    padding: 4px;
+    color: black;
+    font-weight: bold;
+}
+
+.widgets__text span:first-child {
+    color: lightgray;
+}
+
+.widgets:hover {
+    background: #e4d3d36e;
+}
+
+.my__item {
+    padding: 13px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.my__item span {
+    font-weight: bold;
+    font-size: initial;
+    margin-left: 5px;
+}
+
+.widgets:hover,
+.my__item:hover {
+    background: #e4d3d36e;
+    transition: .3s ease-in-out;
+}
+
+.my__item {
+    padding: 13px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.my__item span {
+    font-weight: bold;
+    font-size: initial;
+    margin-left: 5px;
+}
+
+ul.details__card {
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 1px 1px gray;
+    padding: 20px;
+}
+
+ul.details__card li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+ul.details__card li:last-child{
+    background: #d3d3d317;
+    padding: 13px 5px;
+    border-top: 1px solid lightgray;
+    color: gray;
+    cursor: pointer;
+}
+ul.details__card li:last-child:hover{
+    background: rgba(0,0,0,0.05)
+}
+
+/* ============lets style for the right sestions ==================== */
+.home_right{
+    grid-area: rightside;
+    margin-bottom: 90px;
+}
+.follow__card {
+    background: white;
+    border-radius: 3px;
+    padding: 20px 10px;
+}
+
+.follow__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    padding-bottom: 20px;
+}
+
+ul.follow__body {
+    padding: 10px;
+}
+
+ul.follow__body li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+ul.follow__body li img {
+    width: 35px;
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+.follow__btn {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+}
+
+.follow__btn a {
+    padding: 7px 15px;
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 5px;
+    background: transparent;
+}
+
+.follow__btn a:hover {
+    background: rgba(0,0,0,0.09);
+    transition: .3s;
+}
+
+ul.follow__body li:last-child {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+ul.follow__body li:last-child img {
+    width: 14px;
+    margin-left: 10px;
+}
+
+.job__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    margin: 20px 0;
+    padding: 9px 5px;
+    height: fit-content;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px grey;
+}
+
+
+.job__img img {
+    width: 100%;
+    object-fit: contain;
+    height: 100%;
+}
+
+
+
+@media (max-width:768px){
+    .home__layout {
+        display:flex;
+        flex-direction: column;
+        padding: 0 10px;
+    }
+
+
+}
+
+
+ /* this is for pc */
+@media (min-width: 768px){
+    .home{
+        padding-top: 110px;
+    }
+
+}

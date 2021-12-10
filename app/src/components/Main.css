@@ -1,0 +1,215 @@
+.main{
+    grid-area: main;
+}
+
+.main .avatar{
+    width:50px;
+    height: 50px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.createPost__item img {
+    width: 20px;
+}
+
+.cratePost__area {
+    background: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 1px #00000073;
+}
+
+.createPost__top {
+    display: flex;
+    align-items: center;
+}
+
+.postBtn {
+    flex: 1;
+    padding: 11px 14px;
+    border: 1px solid lightgray;
+    border-radius: 22px;
+    box-shadow: 0px 1px 1px lightgray;
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 9px;
+    cursor: pointer;
+}
+
+.cratePost___bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.createPost__item {
+    display: flex;
+    align-items: center;
+    padding: 12px 10px;
+    color: #0000fff7;
+    font-weight: 700;
+    cursor: pointer;
+    background: transparent;
+    border-radius: 10px;
+}
+
+.createPost__item p {
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+.createPost__item:hover {
+    background: rgba(0,0,0,0.09);
+}
+
+
+/* =========================Design for the post page======================== */
+.post__body img{
+    width: 100%;
+    height: 100%;
+}
+
+.postHeader__LeftInfo img{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    border-radius: 7px;
+}
+
+.more img{
+    width: 20px;
+    height: auto;
+    cursor: pointer;
+}
+
+.allpost {
+    margin-top: 15px;
+}
+
+.post {
+    background: white;
+    box-shadow: 0px 1px 1px gray;
+    margin-bottom: 15px;
+}
+
+.post__header {
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.postHeader__LeftInfo {
+    display: flex;
+    align-items: center;
+}
+
+.postHeader__details {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.postHeader__details h3 {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.postHeader__details p, .postHeader__details span {
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    color: gray;
+}
+
+
+.post__body {
+    width: 100%;
+}
+
+.post__body p {
+    padding: 13px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.post__fotter {
+    padding: 7px 10px;
+}
+
+.footer__top {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.footer__top button {
+    padding: 5px;
+    font-size: 16px;
+    margin-right: 15px;
+}
+
+.footer__top button i {
+    margin-right: 7px;
+    color: blue;
+}
+
+.fotter__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fotter__bottom button {
+    padding: 8px 13px;
+    color: blue;
+    font-size: 16px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.fotter__bottom button span {
+    color: gray;
+    margin-left: 5px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 
+spiner css */
+.spinner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    min-height: 100vh;
+    z-index: 100000;
+    width:100vw;
+    position: fixed;
+    background:rgba(0,0,0,0.7);
+
+}
+
+.spinner img {
+    width: 100px;
+}
+
+@media (max-width:768px){
+    .spinner img {
+        width: 70px;
+    }
+}

@@ -1,0 +1,173 @@
+.header{
+    background:white;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+    left: 0;
+    padding: 0 25px;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 100;
+}
+
+.header__contant{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    min-height: 100%;
+    max-width: 1128px;
+}
+
+.headerLeft__logo{
+    display:flex;
+}
+
+.headerLeft__logo a{
+    margin-right: 15px;
+    font-size: 0px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    opacity: 1;
+    max-width: 320px;
+    width: 250px;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    padding: 1px;
+    position: relative;
+}
+
+.search input {
+    flex: 1;
+    border: none;
+    box-shadow: none;
+    background: #eef3f8;
+    border-radius: 2px;
+    color: rgba(0,0,0,.9);
+    padding: 0 8px 0 40px;
+    height: 34px;
+    font-size: 14px;
+    border-color: #dce6f1;
+    vertical-align: text-top;
+
+}
+
+
+.search img {position: absolute;top: 27%;left: 9px;color: gray; width:15px;}
+
+.header nav {
+    margin-left: auto;
+    display: block;
+}
+
+
+.header nav ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content:space-around;
+        padding: 9px 0;
+}
+
+.header nav ul li {
+    display: flex;
+    align-items: center;
+}
+
+.header nav ul li a {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    flex-direction: column;
+    font-size: 15px;
+    font-weight: 400;
+    justify-content: center;
+    line-height: 1.5;
+    min-height: 42px;
+    min-width: 100px;
+    position: relative;
+    text-align: center;
+}
+
+.header nav ul li a span {
+    color: rgba(0,0,0,.6);
+}
+
+
+.header nav ul li a::before .header nav ul li a span,
+.header nav ul li a::after .header nav ul li a span{
+    color: rgba(0,0,0,.9)
+}
+
+.header nav ul li.active  a span{
+border-bottom: 3px solid black;
+width:60px
+
+}
+
+.user{
+    position: relative;
+}
+
+.user a img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.logout{
+    position: absolute !important;
+    top: 47px;
+    left: 0;
+    padding: 10px 6px;
+    background: white !important;
+    border-radius: 5px;
+    color: black;
+    font-weight: 500 !important;
+    text-align: center !important;
+    display: none !important;
+}
+.user:hover .logout{
+display:block !important;
+}
+
+.user a span,
+.work a span {
+    display: flex;
+    align-items: center;
+
+}
+.user a span img,
+.work a span img{
+    width: 15px;
+    height: 15px;
+    object-fit: contain;
+}
+
+.work{
+    border-left: 1px solid rgba(0,0,0,.08);
+}
+
+
+
+
+
+@media (max-width:768px){
+    .header nav {
+        position: fixed;
+        left:0;
+        bottom:0;
+        background:white;
+        width:100%;
+    }
+
+    .header nav ul li a{
+        min-width: 70px;
+    }
+
+    .logout{
+        top: 20px;
+        padding: 5px 3px;
+    }
+}
